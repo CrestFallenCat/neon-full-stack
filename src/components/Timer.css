@@ -1,0 +1,19 @@
+.countdown {
+  position: relative;
+  top: 40px;
+  text-align: center;
+
+  font-size: 1.7vw;
+}
+
+#time-up {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+  .countdown {
+    top: 20px;
+  }
+}

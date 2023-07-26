@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@100&family=Dosis:wght@600&display=swap");
+.allBugs {
+  display: inline-flex;
+}
+#white,
+#yellow {
+  margin-right: 50px;
+}
+.pic-para {
+  border-radius: 20px;
+  background-color: rgba(170, 0, 255, 0.141);
+  padding-top: 30px;
+  backdrop-filter: blur(4px);
+}
+.pic-para p {
+  max-width: 300px;
+  font-family: "Anek Odia", sans-serif;
+}
+.pic-para img {
+  background-color: rgba(0, 0, 0, 0.494);
+  border-radius: 50%;
+  padding: 5%;
+}
+.beetle {
+  max-width: 220px;
+}
+
+@media screen and (max-width: 1060px) {
+  .allBugs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .pic-para p {
+    max-width: 100%;
+  }
+
+  #white,
+  #yellow {
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+}

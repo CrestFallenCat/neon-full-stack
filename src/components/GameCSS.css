@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap");
+
+.the-images {
+  display: flex;
+  justify-content: center;
+}
+
+.the-icons {
+  position: absolute;
+
+  z-index: 2;
+  top: 35%;
+}
+.human,
+.machine {
+  width: 30%;
+  border: 2px solid rgb(157, 224, 255);
+  border-radius: 5%;
+  box-shadow: 0 0 100px rgba(79, 208, 251, 0.618);
+  top: 30%;
+}
+.tick {
+  color: rgb(2, 235, 2);
+}
+.cross {
+  color: red;
+}
+
+.tick,
+.cross {
+  width: 80%;
+}
+
+.buttons {
+  position: absolute;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#humanButton,
+#aiButton {
+  position: relative;
+  cursor: pointer;
+  width: 17%;
+}
+
+#humanButton {
+  right: 20%;
+}
+#aiButton {
+  left: 20%;
+}
+
+.parent-reset {
+  /* margin-top: 5%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.resetButton {
+  transform: translateY(-50px);
+
+  border-radius: 50%;
+  border: 2px solid rgb(192, 192, 255);
+  padding: 2%;
+  font-family: "Indie Flower", cursive;
+  color: rgb(160, 250, 255);
+  background-color: rgba(0, 0, 0, 0.097);
+  cursor: pointer;
+  font-size: 120px;
+  z-index: 3;
+  transition: 0.3s;
+}
+.resetButton:hover {
+  backdrop-filter: blur(4px);
+  color: rgb(250, 150, 255);
+  border: 3px solid rgb(255, 185, 247);
+  box-shadow: 0 0 200px rgba(247, 0, 255, 0.644),
+    inset 0 0 20px rgb(247, 0, 255);
+  text-shadow: 0 0 20px rgb(195, 5, 202), 0 0 70px rgb(172, 7, 178);
+}
+
+.tick,
+.cross {
+  z-index: 1;
+  font-size: 350px;
+  animation: fadeOut 0.7s ease-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.counter-container {
+  position: relative;
+  text-align: center;
+}
+.confetti {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#counter {
+  margin-top: 50px;
+  font-family: "Dosis", sans-serif;
+  font-size: 2.3vw;
+}
+
+#title {
+  background-color: rgba(0, 0, 0, 0.767);
+  margin-left: 2%;
+  width: max-content;
+  position: relative;
+}
+#title::before,
+#title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#title::before {
+  background-color: rgb(0, 0, 0);
+  animation: typewriter 2s steps(13) forwards;
+}
+#title::after {
+  width: 0.124em;
+  background: rgb(255, 255, 255);
+  animation: typewriter 2s steps(13) forwards, blink 950ms steps(13) infinite;
+}
+.the-paragraphs {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px -30px 70px rgba(0, 0, 0, 0.4),
+    0px 30px 70px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+.game-para {
+  text-align: center;
+}
+
+#para-1 {
+  margin-top: 2%;
+}
+#para-2 {
+  margin-top: 40px;
+  margin-bottom: 4%;
+}
+#human-pink {
+  color: rgb(246, 192, 255);
+  font-weight: bold;
+}
+
+#ai-blue {
+  color: rgb(128, 206, 255);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 912px) {
+  .human,
+  .machine {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1046px) {
+  .the-icons {
+    top: 40%;
+  }
+  .tick,
+  .cross {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .the-icons {
+    top: 45%;
+    left: 30%;
+  }
+  .tick,
+  .cross {
+    width: 60%;
+  }
+}

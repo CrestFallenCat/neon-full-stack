@@ -1,0 +1,35 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+.carousel img {
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  object-fit: cover;
+}
+
+.blue img {
+  border-bottom: 2px solid rgb(255, 255, 255);
+  box-shadow: rgb(120, 179, 238) 0px 9px 30px;
+  border-radius: 50%;
+}
+.pink img {
+  border-bottom: 2px solid rgb(249, 191, 251);
+
+  border-radius: 50%;
+  box-shadow: rgb(234, 120, 238) 0px 9px 30px;
+}
+@media screen and (max-width: 600px) {
+  .carousel img {
+    width: 100%;
+  }
+  .blue img {
+    box-shadow: rgb(120, 179, 238) 0px 2px 10px;
+    margin: 30px;
+  }
+  .pink img {
+    box-shadow: rgb(234, 120, 238) 0px 2px 10px;
+    margin: 30px;
+  }
+}

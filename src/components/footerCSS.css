@@ -1,0 +1,26 @@
+.footer {
+  border-top: 2px solid rgb(108, 213, 255);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  box-shadow: 0px -3px 20px rgba(14, 132, 217, 0.35);
+  text-align: center;
+}
+.link {
+  position: relative;
+  display: inline;
+
+  text-decoration: none;
+  font-family: "Indie Flower", cursive;
+  letter-spacing: 3px;
+  font-size: 1.4em;
+
+  color: rgb(172, 255, 255);
+  text-shadow: 0 0 5px rgba(84, 206, 247, 0.775);
+  transition: 0.4s;
+}
+
+.link:hover {
+  text-shadow: 0 0 10px rgba(50, 204, 255, 0.623),
+    0 0 20px rgba(50, 204, 255, 0.515), 0 0 30px rgba(50, 204, 255, 0.496),
+    0 0 40px rgba(50, 204, 255, 0.496);
+}
