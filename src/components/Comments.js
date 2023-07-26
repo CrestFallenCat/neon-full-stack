@@ -10,6 +10,8 @@ export function Comments() {
 
   const [backendData, setBackendData] = useState([]);
 
+  // ALSO need to have this run when page first lodes!!
+
   // fetch comments from the backend every time the 'comment' state is changed
   useEffect(() => {
     fetchComments();
