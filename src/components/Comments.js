@@ -160,15 +160,26 @@ export function Comments() {
           </div>
           <div>
             {editingIndex === index ? (
-              <button onClick={() => handleSaveComment(index)}>Save</button>
+              <button
+                className="comment-buttons"
+                onClick={() => handleSaveComment(index)}
+              >
+                Save
+              </button>
             ) : (
               <button
+                className="comment-buttons"
                 onClick={() => handleStartEditing(index, comment.comment)}
               >
                 Edit
               </button>
             )}
-            <button onClick={() => handleDeleteComment(index)}>Delete</button>
+            <button
+              className="comment-buttons"
+              onClick={() => handleDeleteComment(index)}
+            >
+              Delete
+            </button>
           </div>
         </div>
       ))}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Form.css";
 
 function CommentForm({ onFormSubmit }) {
   const [name, setName] = useState("");
@@ -20,25 +21,37 @@ function CommentForm({ onFormSubmit }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Name:
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-      </label>
-      <label>
-        Comment:
-        <input
-          type="text"
-          value={comment}
-          onChange={(e) => setComment(e.target.value)}
-        />
-      </label>
-      <button type="submit">Submit</button>
-    </form>
+    <div className="form">
+      <form onSubmit={handleSubmit}>
+        <div>
+          <div>
+            <label>Name:</label>
+          </div>
+          <textarea
+            id="name"
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div>
+          <div>
+            <label>Comment:</label>
+          </div>
+          <textarea
+            id="comment"
+            type="text"
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
+          />
+        </div>
+        <div>
+          <button type="submit" className="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
   );
 }
 
