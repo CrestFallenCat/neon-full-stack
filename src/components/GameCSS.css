@@ -63,9 +63,7 @@
 }
 .resetButton {
   transform: translateY(-50px);
-
-  border-radius: 50%;
-  border: 2px solid rgb(192, 192, 255);
+  border: none;
   padding: 2%;
   font-family: "Indie Flower", cursive;
   color: rgb(160, 250, 255);
@@ -77,10 +75,9 @@
 }
 .resetButton:hover {
   backdrop-filter: blur(4px);
-  color: rgb(250, 150, 255);
-  border: 3px solid rgb(255, 185, 247);
-  box-shadow: 0 0 200px rgba(247, 0, 255, 0.644),
-    inset 0 0 20px rgb(247, 0, 255);
+  border-radius: 50%;
+  box-shadow: 0 0 200px rgba(247, 0, 255, 0.644);
+
   text-shadow: 0 0 20px rgb(195, 5, 202), 0 0 70px rgb(172, 7, 178);
 }
 

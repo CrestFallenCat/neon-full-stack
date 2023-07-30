@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Confetti from "./Confetti";
+
 import Timer from "./Timer";
 
 import { motion } from "framer-motion";
@@ -207,8 +207,6 @@ export function Game() {
           Reset
         </button>
       </div>
-      {/* </div> */}
-      {/* confetti falls down when after the last images has been shown and the game is over */}
     </motion.div>
   );
 }

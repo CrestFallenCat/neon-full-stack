@@ -8,7 +8,7 @@ export function Comments() {
   const [editingIndex, setEditingIndex] = useState(-1);
   const [editedComment, setEditedComment] = useState("");
 
-  const [backendData, setBackendData] = useState([]);
+  // const [backendData, setBackendData] = useState([]);
 
   // ALSO need to have this run when page first lodes!!
 
@@ -120,7 +120,7 @@ export function Comments() {
       exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
     >
       <h1 id="title"> Have an opinion? </h1>
-      <div>
+      {/* <div>
         <p>
           I hold a personal perspective that embraces the presence of our
           newfound artistic AI overlords, recognizing their enduring
@@ -129,9 +129,9 @@ export function Comments() {
           might differ if I were a professional illustrator.
         </p>
         <p>Im sure you reckon something. Have at it</p>
-      </div>
+      </div> */}
 
-      <div>
+      {/* <div>
         {typeof backendData.comments === "undefined" ? (
           <p></p>
         ) : (
@@ -139,7 +139,7 @@ export function Comments() {
             <p key={index}>{comment}</p>
           ))
         )}
-      </div>
+      </div> */}
 
       <Form onFormSubmit={handleFormSubmit} />
 

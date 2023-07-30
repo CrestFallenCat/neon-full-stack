@@ -4,8 +4,6 @@
   display: inline-flex;
   padding: 30px;
   border-radius: 20px;
-
-  /* border: 1px pink solid; */
 }
 
 .form textarea {
@@ -64,11 +62,12 @@
 .comment-buttons {
   background-color: rgba(113, 29, 43, 0);
   border: none;
-  color: rgb(255, 0, 212);
+  color: rgb(255, 58, 222);
   cursor: pointer;
   font-family: "Indie Flower", cursive;
   letter-spacing: 2px;
   font-size: 18px;
+  font-weight: bold;
   transition: 0.3s;
 }
 
